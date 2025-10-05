@@ -1,0 +1,121 @@
+/*drs part*/
+.dermatologists-section {
+    text-align: center;
+}
+
+.dermatologist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 2px;
+}
+
+.dermatologist {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 26px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+    margin: 12px;
+}
+
+.dermatologist:hover {
+    transform: translateY(-5px);
+}
+
+.dermatologist img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dermatologist p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.dermatologist form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dermatologist input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.dermatologist button {
+    background-color: #654321;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.dermatologist button:hover {
+    background-color: #7c5656;
+}
+
+#appointmentMsg {
+    margin-top: 1.5px;
+    font-weight: bold;
+    color: #654321;
+}
+
+.drName {
+    font-size: 24px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.notification-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff3f8;
+    color: #4b2e2e;
+    border-left: 5px solid #4b2e2e;
+    padding: 5px 1.5px;
+    border-radius: 0.8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    font-weight: 500;
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.Ttiles {
+    color: #4b2e2e;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,159 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  background-color: #fde2da00;
+
+}
+
+.paragraph {
+  flex: 1;
+  margin-top: 40px;
+  margin-right: 50px;
+  text-align: justify;
+  word-spacing: 4px;
+  line-height: 1.6;
+  font-size: 24px;
+  font-weight: bold;
+  color: #965e47;
+
+}
+
+.image img {
+  width: 100%;
+  background-color: #fde2da00;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#wlcm {
+
+  padding-left: 30px;
+
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .paragraph {
+    margin: 20px 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #wlcm {
+    padding-left: 0;
+  }
+
+  .image {
+    margin: 20px 0;
+  }
+}
+
+.collabs-section {
+  padding: 60px 0;
+  background-color: #fde2da00;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #965e47;
+  font-size: 50px;
+}
+
+.collab-slider {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 30px 0;
+  background-color: #fde2da00;
+
+}
+
+.collab-track {
+  display: flex;
+  animation: slideLogos 12s linear infinite;
+}
+
+.collab-logo {
+  flex: 0 0 200px;
+  height: 90px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background-color: #fde2da00;
+}
+
+
+.collab-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  background-color: #fde2da00;
+}
+
+.collab-track {
+  width: calc(200px * 10);
+}
+
+.collab-track:hover {
+  animation-play-state: paused;
+}
+
+/* Sliding animation */
+@keyframes slideLogos {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .collab-track {
+    width: 1500px;
+  }
+
+  .collab-logo {
+    flex: 0 0 150px;
+    padding: 0 15px;
+    height: 60px;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .collab-logo {
+    flex: 0 0 120px;
+    height: 50px;
+    padding: 0 10px;
+  }
+
+  .collab-track {
+    width: 1200px;
+  }
+
+  .collabs-section {
+    padding: 30px 0;
+  }
+
+}
