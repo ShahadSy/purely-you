@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Makeup</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/css/homestyle.css">
+    <link rel="stylesheet" href="/assets/css/makeup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawesome to show the icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="div1">
+            <div class="right-icons">
+                <a href="/assets/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="/assets/profile.html"><i class="fa-solid fa-user"></i></a>
+                <button id="sortBtn" onclick="sortProducts()">
+                    <i class="fas fa-sort-amount-down"></i> Sort
+                </button>
+            </div>
+
+            <h3 id="brand">Purely You</h3>
+
+            <div class="left-icons">
+                <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch()"></i>
+                <input id="search-box" type="text" placeholder="Search products..." style="display: none; border: none;"
+                    onkeyup="searchProduct(event)">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../assets/home.html">Home</a></li>
+                <li><a href="../assets/skinpage.html">Skin</a></li>
+                <li><a href="../assets/hairpage.html">Hair</a></li>
+                <li><a href="../assets/makeup.html">Makeup</a></li>
+                <li><a href="../assets/tests.html">Skin & Hair test</a></li>
+                <li><a href="../assets/drs.html">Dermatologists</a></li>
+                <li><a href="../assets/ourStory.html">Our Story</a></li>
+                <li><a href="../assets/offers.html">Offers</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="container" id="inspiration">
+            <img src="images/s2.jpg">
+            <img src="images/s8.jpg">
+            <img src="images/s3.jpg">
+            <img src="images/s4.jpg">
+            <img src="images/s1.jpg">
+            <img src="images/s5.jpg">
+            <img src="images/s7.jpg">
+            <img src="images/s6.jpg">
+            <img src="images/s9.jpg">
+            <img src="images/s10.png">
+        </div>
+
+        <blockquote>“Makeup is art — your face, the masterpiece.”</blockquote>
+        <br>
+        <h2 class="Ttiles" id="skinTtile">Our Makeup Line</h2>
+        <br>
+        <div class="product-container">
+            <!-- p1-->
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/eyesh1.jpg" alt="eyeshadow">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">eyeshadow palette</h4>
+                        <span class="price">$19.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>A richly pigmented palette with blendable shades, perfect for creating soft daytime looks or
+                            bold evening glam.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- p2-->
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/eyesh2.jpg" alt="eyeshadow palette">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">eyeshadow palette</h4>
+                        <span class="price">$19.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>A richly pigmented palette with blendable shades, perfect for creating soft daytime looks or
+                            bold evening glam.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--p3-->
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/eyesh3.jpg" alt="eyeshadow palette">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">eyeshadow palette</h4>
+                        <span class="price">$19.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>A richly pigmented palette with blendable shades, perfect for creating soft daytime looks or
+                            bold evening glam.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- p4-->
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/cropped-lip1 (1)-Photoroom (1).png" alt="lips">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">lip oil</h4>
+                        <span class="price">$10.50</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Repairs damage and boosts shine.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- p5 -->
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/cropped-lip2-Photoroom (1).png" alt="lip oil">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">lip oil</h4>
+                        <span class="price">$10.50</span>
+                    </div>
+                    <div class="product-back">
+                        <p>do you want to try a new look with bigger libs ? no fillers or surgeries needed.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--p6-->
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/cropped-lip3-Photoroom (1).png" alt="lip oil">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">lip oil</h4>
+                        <span class="price">$10.50</span>
+                    </div>
+                    <div class="product-back">
+                        <p>a natural makeup look with moisturizer for lips.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- p7-->
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/beauty-blender.jpg" alt="sponge">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">lBeauty blender</h4>
+                        <span class="price">$7.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Softens, detangles, and adds bounce.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/lipliner1.jpg" alt="lip liner">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">lip liner</h4>
+                        <span class="price">$5.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Define and shape your lips with this creamy, long-lasting liner that prevents feathering and
+                            enhances any lip color.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/lipliner2.jpg" alt="lip liner">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">lip liner</h4>
+                        <span class="price">$5.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Define and shape your lips with this creamy, long-lasting liner that prevents feathering and
+                            enhances any lip color.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/lipliner3.jpg" alt="lip liner">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">lip liner</h4>
+                        <span class="price">$5.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Define and shape your lips with this creamy, long-lasting liner that prevents feathering and
+                            enhances any lip color.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/blush-rose.jpg" alt="blush">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">Blush - roblush-rose.jpg</h4>
+                        <span class="price">$15.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Add a healthy flush to your cheeks with this silky, blendable blush available in universally
+                            flattering shades.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/blush-red.jpg" alt="blush">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">Blush - red</h4>
+                        <span class="price">$15.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Add a healthy flush to your cheeks with this silky, blendable blush available in universally
+                            flattering shades.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/blush-rose.jpg" alt="blush">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">Blush - Rose</h4>
+                        <span class="price">$15.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Add a healthy flush to your cheeks with this silky, blendable blush available in universally
+                            flattering shades.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/mascara.jpg" alt="mascara">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">Mascara</h4>
+                        <span class="price">$20.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p>A big volume mascara that won't leave your lashes stiff or brittle.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/cropped-concelar-Photoroom (1).png" alt="concelar">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">concelar</h4>
+                        <span class="price">$16.00</span>
+                    </div>
+                    <div class="product-back">
+                        <p>Lightweight yet full-coverage, this concealer brightens under-eyes and blurs imperfections
+                            for a flawless finish.</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="this.classList.toggle('flipped')">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="/assets/images/ee37eff03beb097dd0dab1a2be1c2ce0.jpg" alt="foundation">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <h4 class="title">Foundation</h4>
+                        <span class="price">$25.99</span>
+                    </div>
+                    <div class="product-back">
+                        <p> A breathable, buildable foundation that evens out skin tone and delivers a natural matte or
+                            dewy glow</p>
+                        <i class="fa-solid fa-cart-plus buy-btn" onclick="addToCart(event, this)"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="quantity-controls" onclick="event.stopPropagation();">
+                            <button class="decrease-btn">−</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="marquee-container">
+            <div class="marquee">
+                <span> OUR NEW COLLECTION IS ON THE WAY </span>
+                <span> OUR NEW COLLECTION IS ON THE WAY </span>
+                <span> OUR NEW COLLECTION IS ON THE WAY </span>
+                <span> OUR NEW COLLECTION IS ON THE WAY </span>
+            </div>
+        </div>
+        <div class="scroll-container">
+            <h3 class="Ttiles">From Shelf to Self: Your Makeup Journey</h3>
+            <button class="scroll-btn left-btn">◀</button>
+            <div class="scroll-content">
+                <iframe src="https://www.youtube.com/embed/bEKufM_im88" controls alt="Tutorial 3"></iframe>
+                <iframe src="https://www.youtube.com/embed/SkYCJE9yLvM" controls alt="Tutorial 1"></iframe>
+                <iframe src="https://www.youtube.com/embed/ZVM_E8XJF1Y" controls alt="Tutorial 2"></iframe>
+                <iframe src="https://www.youtube.com/embed/JPUbSvsxjsY" controls alt="Tutorial 4"></iframe>
+                <iframe src="https://www.youtube.com/embed/TansosNLTfc" controls alt="Tutorial 5"></iframe>
+                <iframe src="https://www.youtube.com/embed/3zQwDu2dOvg" controls alt="Tutorial 6"></iframe>
+                <iframe src="https://www.youtube.com/embed/x3ng1jtSE9g" controls alt="Tutorial 7"></iframe>
+                <iframe src="https://www.youtube.com/embed/oQkQv1ULyzs" controls alt="Tutorial 8"></iframe>
+                <iframe src="https://www.youtube.com/embed/amtoSh3vgCE" controls alt="Tutorial 9"></iframe>
+                <iframe src="https://www.youtube.com/embed/T7t-SxGGtCg" controls alt="Tutorial 10"></iframe>
+            </div>
+            <button class="scroll-btn right-btn">▶</button>
+        </div>
+
+    </main>
+    <br>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Purely YOU</h3>
+                <p>Crafted for you—pure, personal, powerful.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../assets/home.html">Home</a></li>
+                    <li><a href="../assets/profile.html">profile</a></li>
+                    <li><a href="../assets/login.html">login</a></li>
+                    <li><a href="../assets/aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section map">
+                <h2 id="branches">Our Branches</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1iNqfIi02rndZNHz_GpcmcBeUl-g5M_8&ehbc=2E312F&noprof=1"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Purely You | All Rights Reserved</p>
+        </div>
+
+        <!-- Chatbot Button -->
+        <div id="chatbot-button" onclick="toggleChatbot()">💬</div>
+
+        <!-- Chatbot Window -->
+        <div id="chatbot-window">
+            <div id="chatbot-header">
+                Purely You Bot 💖 <span onclick="toggleChatbot()">✖️</span>
+            </div>
+            <div id="chatbot-messages"></div>
+            <input type="text" id="chatbot-input" placeholder="Ask me something..."
+                onkeypress="if(event.key==='Enter') sendMessage()">
+        </div>
+    </footer>
+    <script src="/assets/js/home.js"></script>
+    <script src="/assets/js/product.js"></script>
+
+
+
+</body>
+
+</html>

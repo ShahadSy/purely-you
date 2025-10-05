@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dermatologists</title>
+<link rel="icon" type="image/png" href="/assets/images/logo.png">
+<link rel="stylesheet" href="/assets/css/homestyle.css">
+<link rel="stylesheet" href="/assets/css/drs.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--fontawesome to show the icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+<div id="div1">
+<div class="right-icons">
+<a href="/assets/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+<a href="/assets/profile.html"><i class="fa-solid fa-user"></i></a>
+</div>
+<h3 id="brand">Purely    You</h3>
+<div class="left-icons">
+    <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch()"></i>
+    <!--for activating searchbtn-->
+    <input id="search-box" type="text" placeholder="Search products" onkeypress="if(event.key==='Enter') searchProduct()" style="display: none; border: none;">
+    </div>
+</header>
+
+<main>
+</div>
+<nav>
+<ul>
+    <li><a href="../assets/home.html">Home</a></li>
+    <li><a href="../assets/skinpage.html">Skin</a></li>
+    <li><a href="../assets/hairpage.html">Hair</a></li>
+    <li><a href="../assets/makeup.html">Makeup</a></li>
+    <li><a href="../assets/tests.html">Skin & Hair test</a></li>
+    <li><a href="../assets/drs.html">Dermatologists</a></li>
+    <li><a href="../assets/ourStory.html">Our Story</a></li>
+    <li><a href="../assets/offers.html">Offers</a></li>
+</ul>
+</nav>
+<br>
+<div class="container" id="inspiration">
+<img src="images/s2.jpg">
+<img src="images/s8.jpg">
+<img src="images/s3.jpg">
+<img src="images/s4.jpg">
+<img src="images/s1.jpg">
+<img src="images/s5.jpg">
+<img src="images/s7.jpg">
+<img src="images/s6.jpg">
+<img src="images/s9.jpg">
+<img src="images/s10.png">
+</div>
+
+<blockquote>"Your skin tells a story—let a dermatologist help you write it beautifully."
+
+
+
+
+
+
+
+
+</blockquote>
+<br>
+<div class="covers">
+    <div><img src="../assets/images/glitter-removebg-preview.png"></div>
+    <div><p>Click, Diagnose, Glow</p>
+        <p>—All Online</p></div>
+</div>
+<br>
+
+<!--dermatologists-->
+<section class="dermatologists-section">
+    <h2  class="Ttiles">Meet Our Dermatologists</h2>
+    <div class="dermatologist-grid">
+    <!-- Dermatologist 1 -->
+    <div class="dermatologist">
+    <img src="/assets/images/d1.png" alt="Dr. karim Nassar">
+    <h3  class="drName">Dr. karim Nassar</h3>
+    <p>Graduated from Harvard Medical School, specialized in clinical dermatology.</p>
+    <form onsubmit="handleAppointment(event, 'karim')">
+    <input type="date" name="appointmentDate" required />
+    <button type="submit">Book an Appointment</button>
+    </form>
+    </div>
+    <!-- Dermatologist 2 -->
+    <div class="dermatologist">
+    <img src="/assets/images/Dr.-Nada-Soueidan-1-Photoroom.png" alt="Dr. Leila Kassem">
+    <h3  class="drName">Dr. Leila kassem</h3>
+    <p>Trained at University of Paris. Expert in cosmetic skin solutions.</p>
+    <form onsubmit="handleAppointment(event, 'leila')">
+    <input type="date" name="appointmentDate" required />
+    <button type="submit">Book an Appointment</button>
+    </form>
+    </div>
+    
+    <!-- Dermatologist 3 -->
+    <div class="dermatologist">
+    <img src="/assets/images/antoine-ghanem-min-Photoroom.png" alt="Dr. samir ghali">
+    <h3  class="drName">Dr. samir ghali</h3>
+    <p>Studied at Johns Hopkins University. Focus on acne & youth skin care.</p>
+    <form onsubmit="handleAppointment(event, 'samir')">
+    <input type="date" name="appointmentDate" required />
+    <button type="submit">Book an Appointment</button>
+    </form>
+    </div>
+    <!-- Dermatologist 4 -->
+    <div class="dermatologist">
+    <img src="/assets/images/unnamed-Photoroom.png" alt="Dr. yara mansour">
+    <h3 class="drName">Dr. yara mansour</h3>
+    <p>London School of Medicine graduate. Hair & scalp specialist.</p>
+    <form onsubmit="handleAppointment(event, 'yara')">
+    <input type="date" name="appointmentDate" required />
+    <button type="submit">Book an Appointment</button>
+    </form>
+    </div>
+    </div>
+    <p id="appointmentMsg" class="hidden"></p>
+    </section>
+    <br>
+
+    <div class="marquee-container">
+<div class="marquee">
+<span>  CHECK OUR NEW PRODUCTS  </span>
+<span>  CHECK OUR NEW PRODUCTS  </span>
+<span>  CHECK OUR NEW PRODUCTS  </span>
+<span>  CHECK OUR NEW PRODUCTS  </span>
+</div>
+</div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Purely YOU</h3>
+            <p>Crafted for you—pure, personal, powerful.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="../assets/home.html">Home</a></li>
+                <li><a href="../assets/profile.html">profile</a></li>
+                <li><a href="../assets/login.html">login</a></li>
+                <li><a href="../assets/aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section map">
+            <h2 id="branches">Our Branches</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iNqfIi02rndZNHz_GpcmcBeUl-g5M_8&ehbc=2E312F&noprof=1"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Purely You | All Rights Reserved</p>
+    </div>
+
+    <!-- Chatbot Button -->
+    <div id="chatbot-button" onclick="toggleChatbot()">💬</div>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window">
+        <div id="chatbot-header">
+            Purely You Bot 💖 <span onclick="toggleChatbot()">✖️</span>
+        </div>
+        <div id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="Ask me something..." onkeypress="if(event.key==='Enter') sendMessage()">
+    </div>
+</footer>
+<script src="/assets/js/home.js"></script>
+</body>
+</html>

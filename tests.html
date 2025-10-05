@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tests</title>
+<link rel="icon" type="image/png" href="/assets/images/logo.png">
+<link rel="stylesheet" href="/assets/css/homestyle.css">
+<link rel="stylesheet" href="../assets/css/test.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--fontawesome to show the icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+<div id="div1">
+<div class="right-icons">
+<a href="/assets/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+<a href="/assets/profile.html"><i class="fa-solid fa-user"></i></a>
+</div>
+<h3 id="brand">Purely    You</h3>
+<div class="left-icons">
+    <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch()"></i>
+    <!--for activating searchbtn-->
+    <input id="search-box" type="text" placeholder="Search products" onkeypress="if(event.key==='Enter') searchProduct()" style="display: none; border: none;">
+    </div>
+</header>
+
+<main>
+</div>
+<nav>
+<ul>
+    <li><a href="../assets/home.html">Home</a></li>
+    <li><a href="../assets/skinpage.html">Skin</a></li>
+    <li><a href="../assets/hairpage.html">Hair</a></li>
+    <li><a href="../assets/makeup.html">Makeup</a></li>
+    <li><a href="../assets/tests.html">Skin & Hair test</a></li>
+    <li><a href="../assets/drs.html">Dermatologists</a></li>
+    <li><a href="../assets/ourStory.html">Our Story</a></li>
+    <li><a href="../assets/offers.html">Offers</a></li>
+</ul>
+</nav>
+<br>
+<div class="container" id="inspiration">
+<img src="images/s2.jpg">
+<img src="images/s8.jpg">
+<img src="images/s3.jpg">
+<img src="images/s4.jpg">
+<img src="images/s1.jpg">
+<img src="images/s5.jpg">
+<img src="images/s7.jpg">
+<img src="images/s6.jpg">
+<img src="images/s9.jpg">
+<img src="images/s10.png">
+</div>
+
+<blockquote>"Your hair and skin speak — let us help you understand their language."</blockquote>
+<br>
+<div class="covers">
+    <div><img src="../assets/images/6e5f3dfdc07598d76d5d03b708fc8781-removebg-preview.png"></div>
+    <div><p>Take the tests</p>
+        <p>Unlock the Secrets</p></div>
+</div>
+<br>
+<div class="marquee-container">
+<div class="marquee">
+<span>  CHECK OUR NEW PRODUCTS  </span>
+<span>  CHECK OUR NEW PRODUCTS  </span>
+<span>  CHECK OUR NEW PRODUCTS  </span>
+<span>  CHECK OUR NEW PRODUCTS  </span>
+</div>
+</div>
+<section class="form_p">
+    <!-- Skin Test -->
+    <div class="test-card">
+        <h3 class="Titles"> Take the Skin Test </h3>
+        <form id="skinTestForm" class="diagnostic-form">
+    <div class="form-group">
+        <label>How does your skin usually feel in the morning?</label>
+        <select required>
+        <option value="">Select</option>
+        <option value="Dryness">Tight and dry</option>
+        <option value="Oily skin">Oily and shiny</option>
+        <option value="Sensitive">Normal or sensitive</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>How often do you experience breakouts?</label>
+        <select required>
+        <option value="">Select</option>
+        <option value="Oily skin">Frequently</option>
+        <option value="Sensitive">Sometimes</option>
+        <option value="Dryness">Rarely</option>
+            </select>
+    </div>
+    <div class="form-group">
+        <label>How does your skin react to new products?</label>
+        <select required>
+        <option value="">Select</option>
+        <option value="Sensitive">Irritated/redness</option>
+        <option value="Oily skin">Breakouts</option>
+        <option value="Dryness">Feels dry or flaky</option>
+            </select>
+    </div>
+    <div class="form-group">
+        <label>Do you notice dry patches?</label>
+            <select required>
+        <option value="">Select</option>
+        <option value="Dryness">Yes, very often</option>
+        <option value="Sensitive">Sometimes</option>
+        <option value="Oily skin">Not at all</option>
+            </select>
+    </div>
+    <div class="form-group">
+        <label>What does your skin look like by the end of the day?</label>
+            <select required>
+        <option value="">Select</option>
+        <option value="Oily skin">Oily</option>
+        <option value="Dryness">Dull and flaky</option>
+        <option value="Sensitive">Normal</option>
+            </select>
+    </div>
+        <button type="submit" class="submit-btn">Submit Skin Test</button>
+        </form>
+        <p id="skinDiagnosticResult" class="diagnostic-result result-fade">Skin test results will appear here.</p>
+    </div>
+    <!--hair test-->
+    <div class="test-card">
+        <h3 class="Titles"> Take the Hair Test </h3>
+        <form id="hairTestForm" class="diagnostic-form">
+            <div class="form-group">
+                <label>How often does your hair get greasy?</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option value="Oily Hair">Within 1 day</option>
+                    <option value="Balanced">Every 2–3 days</option>
+                    <option value="Dry Hair">After 4+ days</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>What is the texture of your hair strands?</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option value="Dry Hair">Rough or brittle</option>
+                    <option value="Balanced">Soft and smooth</option>
+                    <option value="Oily Hair">Sticky or limp</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Do you experience flaking or dandruff?</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option value="Dry Hair">Yes, regularly</option>
+                    <option value="Balanced">Sometimes</option>
+                    <option value="Oily Hair">Not really</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>How does your scalp feel during the day?</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option value="Oily Hair">Greasy or sweaty</option>
+                    <option value="Balanced">Comfortable</option>
+                    <option value="Dry Hair">Tight or itchy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>How does your hair behave after washing?</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option value="Oily Hair">Gets greasy fast</option>
+                    <option value="Balanced">Stays clean for days</option>
+                    <option value="Dry Hair">Feels dry or frizzy</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit Hair Test</button>
+        </form>
+        <p id="hairDiagnosticResult" class="diagnostic-result result-fade">Hair test results will appear here.</p>
+    </div>
+    
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Purely YOU</h3>
+            <p>Crafted for you—pure, personal, powerful.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="../assets/home.html">Home</a></li>
+                <li><a href="../assets/profile.html">profile</a></li>
+                <li><a href="../assets/login.html">login</a></li>
+                <li><a href="../assets/aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section map">
+            <h2 id="branches">Our Branches</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iNqfIi02rndZNHz_GpcmcBeUl-g5M_8&ehbc=2E312F&noprof=1"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Purely You | All Rights Reserved</p>
+    </div>
+
+    <!-- Chatbot Button -->
+    <div id="chatbot-button" onclick="toggleChatbot()">💬</div>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window">
+        <div id="chatbot-header">
+            Purely You Bot 💖 <span onclick="toggleChatbot()">✖️</span>
+        </div>
+        <div id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="Ask me something..." onkeypress="if(event.key==='Enter') sendMessage()">
+    </div>
+</footer>
+<script src="../assets/js/test.js"></script>
+<script src="/assets/js/home.js"></script>
+</body>
+</html>

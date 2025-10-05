@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile - Purely You</title>
+<link rel="stylesheet" href="/assets/css/profile.css">
+</head>
+<body>
+<div class="profile-container">
+<button onclick="window.location.href='/assets/home.html'" class="back-btn">← Back to Home</button>
+<h1>Welcome, <span id="profileName">Guest</span> 🤎</h1>
+<p>Email: <span id="profileEmail">-</span></p>
+<div class="profile-picture">
+<img id="userProfileImage" src="/assets/images/pfp.jpg" alt="Profile Picture">
+<input type="file" id="uploadProfilePic" accept="image/*">
+</div>
+<div class="profile-info">
+<h2>Skin Test Result</h2>
+<p id="skinResult">No test taken yet.</p>
+<h2>Hair Test Result</h2>
+<p id="hairResult">No test taken yet.</p>
+<h2>Appointments</h2>
+<p id="appointmentInfo">No appointments booked yet.</p>
+</div>
+</div>
+<script src="/assets/js/profile.js"></script>
+</body>
+</html>

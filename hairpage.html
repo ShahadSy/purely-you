@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hair page </title>
+<link rel="icon" type="image/png" href="/assets/images/logo.png">
+<link rel="stylesheet" href="/assets/css/homestyle.css">
+<link rel="stylesheet" href="/assets/css/hairpage.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--fontawesome to show the icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div id="div1">
+        <div class="right-icons">
+            <a href="/assets/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="/assets/profile.html"><i class="fa-solid fa-user"></i></a>
+            <button id="sortBtn" onclick="sortProducts()">
+                <i class="fas fa-sort-amount-down"></i> Sort
+            </button>
+        </div>
+        
+        <h3 id="brand">Purely You</h3>
+        
+        <div class="left-icons">
+            <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch()"></i>
+            <input id="search-box" type="text" placeholder="Search products..." 
+            style="display: none; border: none;"onkeyup="searchProduct(event)">
+        </div>
+    </div>
+</header>
+<main>
+</div>
+<nav>
+<ul>
+    <li><a href="../assets/home.html">Home</a></li>
+    <li><a href="../assets/skinpage.html">Skin</a></li>
+    <li><a href="../assets/hairpage.html">Hair</a></li>
+    <li><a href="../assets/makeup.html">Makeup</a></li>
+    <li><a href="../assets/tests.html">Skin & Hair test</a></li>
+    <li><a href="../assets/drs.html">Dermatologists</a></li>
+    <li><a href="../assets/ourStory.html">Our Story</a></li>
+    <li><a href="../assets/offers.html">Offers</a></li>
+</ul>
+</nav>
+<br>
+<div class="container" id="inspiration">
+<img src="images/s2.jpg">
+<img src="images/s8.jpg">
+<img src="images/s3.jpg">
+<img src="images/s4.jpg">
+<img src="images/s1.jpg">
+<img src="images/s5.jpg">
+<img src="images/s7.jpg">
+<img src="images/s6.jpg">
+<img src="images/s9.jpg">
+<img src="images/s10.png">
+</div>
+<blockquote>"Good hair speaks louder than words _ let yours scream fabulous!"</blockquote>
+<br>
+
+<h2 class="Ttiles" id="hairTtile">HAIR CARE PRODUCTS</h2>
+<br>
+<div class="product-container">
+    <!-- Scalp Massager -->
+    <div class="product"onclick="this.classList.toggle('flipped')">
+        <div class="product-inner">
+            <div class="product-front">
+                <img src="/assets/images/h1.jpg" alt="Scalp Massager">
+                <i class="fa-solid fa-heart wishlist-icon"></i>
+                <h4 class="title">Scalp Massager</h4>
+                <span class="price">$12.99</span>
+            </div>
+            <div class="product-back">
+                <p>Stimulates growth and melts away stress.</p>
+                <i class="fa-solid fa-cart-plus buy-btn"></i>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease-btn">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coconut Cream -->
+    <div class="product" onclick="this.classList.toggle('flipped')">
+        <div class="product-inner">
+            <div class="product-front">
+                <img src="/assets/images/h2.png" alt="Coconut Cream">
+                <i class="fa-solid fa-heart wishlist-icon"></i>
+                <h4 class="title">Coconut Cream</h4>
+                <span class="price">$21.99</span>
+            </div>
+            <div class="product-back">
+                <p>Deeply nourishes for soft, healthy hair.</p>
+                <i class="fa-solid fa-cart-plus buy-btn"></i>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease-btn">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shampoo -->
+    <div class="product" onclick="this.classList.toggle('flipped')">
+        <div class="product-inner">
+            <div class="product-front">
+                <img src="/assets/images/h3.png" alt="Shampoo">
+                <i class="fa-solid fa-heart wishlist-icon"></i>
+                <h4 class="title">Shampoo</h4>
+                <span class="price">$16.99</span>
+            </div>
+            <div class="product-back">
+                <p>Cleanses gently, revives instantly.</p>
+                <i class="fa-solid fa-cart-plus buy-btn"></i>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease-btn">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Argan Oil Mask -->
+    <div class="product" onclick="this.classList.toggle('flipped')">
+        <div class="product-inner">
+            <div class="product-front">
+                <img src="/assets/images/h4.png" alt="Argan Oil Mask">
+                <i class="fa-solid fa-heart wishlist-icon"></i>
+                <h4 class="title">Argan Oil Mask</h4>
+                <span class="price">$23.99</span>
+            </div>
+            <div class="product-back">
+                <p>Repairs damage and boosts shine.</p>
+                <i class="fa-solid fa-cart-plus buy-btn"></i>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease-btn">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rosemary Serum -->
+    <div class="product" onclick="this.classList.toggle('flipped')">
+        <div class="product-inner">
+            <div class="product-front">
+                <img src="/assets/images/h5.png" alt="Rosemary Serum">
+                <i class="fa-solid fa-heart wishlist-icon"></i>
+                <h4 class="title">Rosemary Serum</h4>
+                <span class="price">$21.99</span>
+            </div>
+            <div class="product-back">
+                <p>Promotes thicker, fuller hair.</p>
+                <i class="fa-solid fa-cart-plus buy-btn"></i>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease-btn">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Olive Oil Serum -->
+    <div class="product" onclick="this.classList.toggle('flipped')">
+        <div class="product-inner">
+            <div class="product-front">
+                <img src="/assets/images/h6.png" alt="Olive Oil Serum">
+                <i class="fa-solid fa-heart wishlist-icon"></i>
+                <h4 class="title">Olive Oil Serum</h4>
+                <span class="price">$18.99</span>
+            </div>
+            <div class="product-back">
+                <p>Locks in moisture, smooths frizz.</p>
+                <i class="fa-solid fa-cart-plus buy-btn"></i>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease-btn">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conditioner -->
+    <div class="product" onclick="this.classList.toggle('flipped')">
+        <div class="product-inner">
+            <div class="product-front">
+                <img src="/assets/images/h7.png" alt="Conditioner">
+                <i class="fa-solid fa-heart wishlist-icon"></i>
+                <h4 class="title">Conditioner</h4>
+                <span class="price">$14.99</span>
+            </div>
+            <div class="product-back">
+                <p>Softens, detangles, and adds bounce.</p>
+                <i class="fa-solid fa-cart-plus buy-btn"></i>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease-btn">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="marquee-container">
+<div class="marquee">
+<span>  SALE SALE SALE 30%  </span>
+<span>  SALE SALE SALE 30%  </span>
+<span>  SALE SALE SALE 30%  </span>
+<span>  SALE SALE SALE 30%  </span>
+<span>  SALE SALE SALE 30%  </span>
+<span>  SALE SALE SALE 30%  </span>
+<span>  SALE SALE SALE 30%  </span>
+<span>  SALE SALE SALE 30%  </span>
+</div>
+</div>
+</main>
+<br>
+<div class="why-container" id="why">
+<div class="image-box">
+<img src="../assets/images/products.jpg" alt="collection of our products" />
+</div>
+<div class="content-box">
+<h2 class="section-title">Why Our Products?</h2>
+<div class="features-grid">
+<div class="feature-card">
+<h4>100% Natural</h4>
+<p>All our products are made from pure, plant-based ingredients—no harsh chemicals, no artificial fragrances, just nature doing what it does best.</p>
+</div>
+<div class="feature-card">
+<h4>No Side Effects</h4>
+<p>Gentle on your skin, tough on skin concerns. Our formulas are dermatologist-tested and crafted to be free from irritation and side effects.</p>
+</div>
+<div class="feature-card">
+<h4>Cruelty-Free</h4>
+<p>We believe in beauty that does no harm. Our products are cruelty-free, eco-friendly, and packed in recyclable packaging—because loving the planet is beautiful too.</p>
+</div>
+<div class="feature-card">
+<h4>All Hair Types</h4>
+<p>Whether you're oily, dry, curly, or sensitive — we’ve got you. Our collection is inclusive and adaptive, designed to bring out your best naturally.</p>
+</div>
+</div>
+</div>
+</div>
+<br>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Purely YOU</h3>
+            <p>Crafted for you—pure, personal, powerful.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="../assets/home.html">Home</a></li>
+                <li><a href="../assets/profile.html">profile</a></li>
+                <li><a href="../assets/login.html">login</a></li>
+                <li><a href="../assets/ourstory.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section map">
+            <h2 id="branches">Our Branches</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iNqfIi02rndZNHz_GpcmcBeUl-g5M_8&ehbc=2E312F&noprof=1"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Purely You | All Rights Reserved</p>
+    </div>
+
+    <!-- Chatbot Button -->
+    <div id="chatbot-button" onclick="toggleChatbot()">💬</div>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window">
+        <div id="chatbot-header">
+            Purely You Bot 💖 <span onclick="toggleChatbot()">✖️</span>
+        </div>
+        <div id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="Ask me something..." onkeypress="if(event.key==='Enter') sendMessage()">
+    </div>
+</footer>
+<script src="/assets/js/home.js"></script>
+<script src="/assets/js/product.js"></script>
+</body>
+</html>
